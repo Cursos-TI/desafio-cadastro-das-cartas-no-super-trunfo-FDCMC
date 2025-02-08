@@ -12,7 +12,7 @@ int main() {
 
     // Declarando variaveis
     int cidade_codigo;
-    char cidade_nome [50];
+    char cidade_nome[20];
     double cidade_populacao;
     double cidade_area;
     float cidade_pib;
@@ -29,7 +29,7 @@ int main() {
 
     // Nome da cidade
     printf("Insira o nome da cidade...\n");
-    scanf("%s", &cidade_nome[50]);
+    scanf("%s", &cidade_nome[0]);
 
     //Populacao da Cidade
     printf("Insira a polução da cidade...\n");
@@ -41,7 +41,7 @@ int main() {
 
     //PIB da cidade
     printf("Insira o PIB da cidade...\n");
-    scanf("%f", cidade_pib);
+    scanf("%f", &cidade_pib);
 
     //Pontos turisticos da cidade
     printf("Insira o número de pontos turisticos...\n");
