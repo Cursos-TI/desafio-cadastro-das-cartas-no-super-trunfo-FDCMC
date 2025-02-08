@@ -14,8 +14,8 @@ int main() {
     int cidade_codigo;
     char cidade_nome [50];
     double cidade_populacao;
-    float cidade_area;
-    double cidade_pib;
+    double cidade_area;
+    float cidade_pib;
     int cidade_pontosturisticos;
     
     // Cadastro das Cartas:
@@ -29,7 +29,7 @@ int main() {
 
     // Nome da cidade
     printf("Insira o nome da cidade...\n");
-    scanf("%c", &cidade_nome);
+    scanf("%s", &cidade_nome[50]);
 
     //Populacao da Cidade
     printf("Insira a polução da cidade...\n");
@@ -37,15 +37,15 @@ int main() {
 
     //Area da cidade
     printf("Insira a aera da cidade...\n");
-    scanf("%f", &cidade_area);
+    scanf("%lf", &cidade_area);
 
     //PIB da cidade
     printf("Insira o PIB da cidade...\n");
-    scanf("%lf", cidade_pib);
+    scanf("%f", cidade_pib);
 
     //Pontos turisticos da cidade
-    printf("Insira a quantidade de pontos turisticos...\n");
-    scanf("%d", &cidade_populacao);
+    printf("Insira o número de pontos turisticos...\n");
+    scanf("%d", &cidade_pontosturisticos);
 
     
     // Exibição dos Dados das Cartas:
@@ -54,11 +54,12 @@ int main() {
 
     //Exibindo
     printf("Código da cidade: %d\n", cidade_codigo);
-    printf("Nome da cidade: %c\n", cidade_nome);
+    printf("Nome da cidade: %s\n", cidade_nome);
     printf("Pupulação da cidade: %lf\n", cidade_populacao);
-    printf("Área da cidade: %f\n", cidade_area);
-    printf("PIB da cidade: %lf\n", cidade_pib);
-    printf("Quantidade de pontos turisticos: %d.", cidade_pontosturisticos);
+    printf("Área da cidade: %lf\n", cidade_area);
+    printf("PIB da cidade: %f\n", cidade_pib);
+    printf("Quantidade de pontos turisticos: %d.\n", cidade_pontosturisticos);
 
+    // Retorno
     return 0;
 }
